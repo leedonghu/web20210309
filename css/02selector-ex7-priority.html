@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* id:100점
+        class:10점
+        element:1점 */
+        h1 {
+            color: red;
+        }
+        .note {
+            color: yellow;
+        }
+        .special {
+            color: blue;
+        }
+        .note.special {
+            color: pink;
+        }
+        .note#head1 {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="note">Lorem ipsum dolor sit amet.</h1>
+    <!-- h1이면서 note 클래스를 가지고 있음. 클래스의 점수가 element보다 높기때문에 노랑색으로 표시 -->
+    <h1 class="note special">Voluptate eum corporis explicabo aperiam?</h1>
+    <!-- note와 special 클래스 둘다 가지고 있을때(점수가 같을때)는 위에서 더 아래쪽에 있는 것이 적용됨 -->
+    <h1 class="note special">Error at nesciunt distinctio expedita.</h1>
+    <!-- 둘이 동시에 가진 클래스가 있을때 20점으로 그것이 나타남 -->
+    <h1 id="head1" class="note">Error culpa fugit quaerat? Fugiat!</h1>
+    <!-- 위의 selector에 마우스를 올려보면 selector specificity (o,o,o)이 나오는데 앞쪽부터 id,class, element를 의미함. 그 수가 더 큰쪽이 우선적으로 보여짐 -->
+    <h1>Odio aut id error nesciunt.</h1>
+</body>
+</html>
