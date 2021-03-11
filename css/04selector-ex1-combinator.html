@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        div > h1 {
+            color: red;
+        }
+        /* div 요소의 자식인 h1 요소 */
+        /* >표시는 자식 selector */
+        .note > p {
+            text-decoration: underline;
+        }
+        /* p인데 클래스가 note인 element가 부모인 p */
+        .error > h1 {
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="note">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+    <!-- div는 h1의 부모 element, h1은 div의 자식 element -->
+    <div class="error">
+        <h1>Lorem ipsum dolor sit amet.</h1>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </div>
+
+    <h1>Lorem ipsum dolor sit amet.</h1>
+    <!-- 부모를 body에 두고있음 -->
+</body>
+</html>
