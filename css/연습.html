@@ -23,6 +23,63 @@
     td {
         text-align: center;
     }
+    .main {
+        padding: 0px;
+        margin: 0px;
+        text-align: center;
+    }
+    .main > li {
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        border: 5px solid lightblue;
+        position: relative;
+    }
+    .sub {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        top: -5px;
+        left: 250px;
+        display: none;
+        list-style-type: none;
+    }
+    .sub.sub1 {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        top: -105px;
+        left: 250px;
+        display: none;
+        list-style-type: none;
+    }
+    .sub.sub2 {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        top: -205px;
+        left: 250px;
+        display: none;
+        list-style-type: none;
+    }
+    .sub.sub3 {
+        padding: 0px;
+        margin: 0px;
+        position: absolute;
+        top: -305px;
+        left: 250px;
+        display: none;
+        list-style-type: none;
+    }
+    .sub > li {
+        box-sizing: border-box;
+        width: 200px;
+        height: 100px;
+        border: 5px solid lightgreen;
+    }
+    .main>li:hover>.sub {
+        display: block;
+    }
 </style>
 </head>
 <body>
@@ -35,19 +92,60 @@
     <tr>
         <td>네이버</td>
         <td><a href="http://www.naver.com">naver.com</a></td>
-        <td></td>
+        <td><img src="naver.jfif" alt=""></td>
     </tr>
     <tr>
         <td>구글</td>
         <td><a href="http://www.google.com">google.com</a></td>
-        <td></td>
+        <td><img src="google.jfif" alt=""></td>
     </tr>
     <tr>
         <td>다음</td>
         <td><a href="http://www.daum.net">daum.net</a></td>
-        <td></td>
+        <td><img src="daum.jfif" alt=""></td>
     </tr>
 
 </table>
+
+<hr>
+
+<ul class="main">
+    <li>분류
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Perspiciatis.</li>
+            <li>Incidunt.</li>
+            <li>Vitae.</li>
+            
+        </ul>
+    </li>
+    <li>it
+        <ul class="sub sub1">
+            <li>네이버</li>
+            <li>카카오</li>
+            <li>구글</li>
+            <li>페이스북</li>
+            
+        </ul>
+    </li>
+    <li>3
+        <ul class="sub sub2">
+            <li>Lorem.</li>
+            <li>Sunt!</li>
+            <li>Expedita?</li>
+            <li>Dolore.</li>
+            
+        </ul>
+    </li>
+    <li>4
+        <ul class="sub sub3">
+            <li>Lorem.</li>
+            <li>Quod!</li>
+            <li>Eligendi!</li>
+            <li>Enim!</li>
+            
+        </ul>
+    </li>
+</ul>
 </body>
 </html>
