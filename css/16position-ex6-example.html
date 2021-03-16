@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    .main {
+        padding: 0px;
+        margin: 0px;
+    }
+    .main > li {
+ box-sizing: border-box;
+ width: 200px;
+ height: 100px;
+ border: 5px solid lightblue;
+ position: relative;
+    }
+    
+    .sub {
+        padding :0px;
+        margin: 0px;
+        position: absolute;
+        top: -5px;
+        left: 250px;
+        display: none;
+        list-style-type: none;
+        
+    }
+    .sub>li {
+       box-sizing: border-box;
+       width: 200px;
+       height: 100px;
+       border: 5px solid lightgreen;
+    }
+    .main>li:hover>.sub {
+        display: block;
+    }
+</style>
+</head>
+<body>
+<ul class="main">
+    <li>Lorem.
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Repudiandae.</li>
+            <li>Ab.</li>
+            <li>Eos.</li>
+            <li>Similique.</li>
+        </ul>
+    </li>
+     
+    <li>Maxime!
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Aspernatur!</li>
+            <li>Laborum?</li>
+            <li>Dolorum!</li>
+            <li>Eaque.</li>
+        </ul>
+    </li>
+    <li>Cupiditate.
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Vero.</li>
+            <li>Beatae.</li>
+            <li>Suscipit.</li>
+            <li>Quod.</li>
+        </ul>
+    </li>
+    <li>Iure!
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Eligendi!</li>
+            <li>Neque.</li>
+            <li>Id?</li>
+            <li>Labore?</li>
+        </ul>
+    </li>
+    <li>Exercitationem?
+        <ul class="sub">
+            <li>Lorem.</li>
+            <li>Quis!</li>
+            <li>Vitae?</li>
+            <li>Quas.</li>
+            <li>Culpa.</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>
