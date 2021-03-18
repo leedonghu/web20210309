@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <input onkeyup="callDouble()" type="text" id="input1">
+    <input onkeyup="callAdd()" type="text" id="input2">
+
+    <p id="result"></p>
+    <p id="result1"></p>
+
+    <script>
+        function double(v) {
+            return v * 2;
+        }
+
+        function callDouble() {
+            var val = document.getElementById("input1").value;
+            var r = double(val);
+            document.getElementById("result").innerHTML = r;
+        }
+
+        function add(v) {
+            return Number(v)+Number(3);
+        }
+        function callAdd() {
+            var c = document.getElementById("input2").value;
+            var d = add(c);
+            document.getElementById("result1").innerHTML= d;
+
+        }
+    </script>
+</body>
+
+</html>

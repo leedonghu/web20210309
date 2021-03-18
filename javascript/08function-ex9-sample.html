@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    화씨:
+    <input type="text" id="input1">
+
+    <button onclick="process()" id="button1">섭씨로 변환</button>
+
+    <br>
+    섭씨:
+    <input type="text" id="input2" readonly="readonly">
+
+    <br>
+    <br>
+    <br>
+    섭씨:
+    <input type="text" id="input3">
+
+    <button onclick="process1()" id="button2">화씨로 변환</button>
+    <br>
+    화씨:
+    <input type="text" id="input4" readonly="readonly">
+    <script>
+        function toCelsius(fahrenheit) {
+            return (5 / 9) * (fahrenheit - 32);
+        }
+        function process() {
+            var a = document.getElementById("input1").value
+            var b = toCelsius(a);
+            document.getElementById("input2").value = b;
+        }
+
+        function toFah(cel) {
+            return (9 / 5) * cel + Number(32);
+        }
+        function process1() {
+
+            var c = document.getElementById("input3").value
+            var d = toFah(c);
+            document.getElementById("input4").value = d;
+
+        }
+
+    </script>
+</body>
+
+</html>

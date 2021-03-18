@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+
+    <script>
+        myFunc();
+
+        //함수 정의는 밑에 있어도 상관없음.  자동으로 위로 끌어올림(hoisting)
+        function myFunc(params) {
+            console.log("abc");
+        }
+
+        //변수에 함수를 할당
+        var func2 = function (params) {
+            console.log("cde");
+        }
+        func2();
+        //이름없는 함수를 사용할때는 hoisting 하지 않음
+
+
+    </script>
+</body>
+
+</html>

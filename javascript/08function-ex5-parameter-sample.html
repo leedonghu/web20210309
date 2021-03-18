@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+<button onclick="changeImage(document.getElementById('button1'))" id="button1">dog</button>
+<button onclick="changeImage(this)" id="button2">images</button>
+<button onclick="changeImage(this)" id="button3">google</button>
+<button onclick="changeImage(this)" id="button4">naver</button>
+<hr>
+<img src="" alt="" id="img1">
+
+<script>
+    function changeImage(params) {
+        document.getElementById("img1").src=params.innerHTML + ".jfif";
+    }
+    
+</script>
+</body>
+</html>

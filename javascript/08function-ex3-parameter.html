@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        //parameter: 매개변수, 인자, 인수 ()안에 들어가는 것
+        function func1(params){
+            console.log("func1 function");
+            console.log(params);
+        }
+
+        // argument : 매개값, 인자, 인수
+        func1(99);
+
+        //parameter는 0개 이상 가능
+        function func2() {
+            console.log("func2 function");
+        }
+
+        func2(99);
+
+        function func3(param1, param2){
+            console.log("func3 function");
+            console.log(param1);
+            console.log(param2);
+
+        }
+        func3(50);
+        func3(55, 'hello');
+        func3();
+        
+        // 아래의 값이 차례대로 나옴
+        //  func3 function
+        //  50
+        //  undefined
+        //  func3 function
+        //  55
+        //  hello
+        //  func3 function
+        //  undefined
+        //  undefined
+    </script>
+</body>
+</html>

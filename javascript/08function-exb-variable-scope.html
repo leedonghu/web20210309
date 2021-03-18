@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        //변수(var)는 2개의 영역중 하나에 속하게됨
+        //1.global(전역변수)
+        //2.function(함수영역)
+        function myFunc(params){
+            var a = 3; //함수영역(scope)
+            console.log(a);
+            console.log(b);
+
+            c = 7; //var을 쓰지않고 선언하면 전역변수가 됨(실수)
+        }
+        function myFunc2(params){
+            var a = 4;
+            console.log(a);//myFunc2()는 호출되지 않았기 때문에 등장하지 않음
+            console.log(b);
+        }
+        var b = 5; //전역변수(global)
+
+        myFunc();
+        console.log(b);// 위에서 a가 정의되었어도 함수 바깥에서는 정의되지 않음
+    </script>
+</body>
+</html>
