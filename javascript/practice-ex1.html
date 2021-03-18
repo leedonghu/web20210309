@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+   센티미터
+   <input type="text" id="input1">
+   <button id="button1" onclick="process()">변환</button>
+   <br>
+   피트
+   <input type="text" id="input2" readonly>
+   <br>
+   인치
+   <input type="text" id="input3" readonly>
+
+   <script>
+       function process() {
+           var a = document.getElementById("input1").value;
+           var b = document.getElementById("input1").value;
+           var c = toFeet(a);
+           var d = toInch(b);
+           document.getElementById("input2").value= c + "feet";
+           document.getElementById("input3").value= d + "inch";
+       }
+       function toFeet(f) {
+           return f*100/254;
+       }
+       function toInch(g) {
+           return g*100/12/254;
+       }
+   </script>
+</body>
+</html>

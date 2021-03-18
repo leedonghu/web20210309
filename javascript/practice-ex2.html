@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    반지름
+    <input type="text" id="input1">
+    높이
+    <input type="text" id="input2" onkeyup="process()">
+    <br>
+    부피
+    <input type="text" id="input3" readonly>
+
+    <script>
+       
+        function process() {
+            var a = document.getElementById("input1").value;
+            var b = document.getElementById("input2").value;
+            var c = volume(a, b);
+            document.getElementById("input3").value=c;
+        }
+        function volume(x, y) {
+            return x*x*3.14*y;
+        }
+    </script>
+</body>
+
+</html>
