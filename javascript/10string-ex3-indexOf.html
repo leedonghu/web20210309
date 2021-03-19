@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        var str = "pen pineapple apple pen";
+        var idx = str.indexOf("apple"); // 8이라는 값을 리턴 0부터 시작해서 8번째에 apple 발견함
+        console.log(idx);
+
+        //slice
+        var res = str.slice(4, 12); //slice는 앞에 숫자 번째 부터 둘째 숫자 번째까지 뽑아냄. pineappl 까지 뽑아냄 마지막은 포함하지 않음 
+        console.log(res); 
+        console.log(str.slice(4));//숫자가 하나만 있으면 그 숫자부터 끝까지를 의미
+
+        //substring
+        var res2 = str.substring (4, 13);
+        console.log(res2); //pineapple 추출 slice와 유사. 음의 index값 가지지 못한다는 차이
+        console.log(str.substring(4));
+
+        //substr
+        var res3 = str.substr(4, 9);
+        console.log(res3);//pineapple 추출 substring과 유사하지만 뒤에 들어가는 숫자는 길이를 의미한다는 차이점 있음
+        console.log(str.substr(4));
+
+    
+    </script>
+</body>
+</html>
