@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        function start() {
+            console.log(this.name+"가 출발합니다")
+        }
+
+        var car = {
+            name: "fiat",
+            // start: function() {
+            //     console.log(this.name+"가 출발합니다");
+            // }
+            start: start
+        }
+        var kar = {
+            name: "volvo",
+            start : start
+        }
+        car.start();
+        kar.start();
+    </script>
+</body>
+</html>

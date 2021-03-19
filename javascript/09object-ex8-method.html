@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        var name= "fiat";
+        function start(){
+            console.log("출발합니다");
+        }
+        var car = {
+            name: name,//둘이 name으로 같아도 혼동되지 않음
+            start: start//앞에것은 이름 뒤에것은 값
+        }
+        console.log(car.name); //piat
+        car.start();
+    </script>
+</body>
+</html>
