@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="../css/all.min.css">
+<style>
+</style>
+</head>
+<body>
+
+    <script>
+        //2항연산자
+        var a = 3 + 5;
+        var b = 5 < 7;
+
+        //3항연산자(ternary)
+        //1항 ? 2항 : 3항;
+        //연산의  결과: 2항 또는 3항
+        //1항이 true -> 2항
+        //1항이 false -> 3항
+        var c = true ? 2 : 3; 
+        var d = true ? 7 : 8;
+        console.log(c);//2 true이기 때문에 2항
+        console.log(d);//7 true이기 때문에 2항
+        var e = false ? 9 : 10; 
+        var f = false ? "abc" : "def"; 
+        console.log(e);//10 false이기 때문에 3항
+        console.log(f);//def false이기 때문에 3항
+
+    </script>
+</body>
+</html>
