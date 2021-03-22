@@ -19,7 +19,12 @@
             margin: 0 0 2rem;
             font-weight: 700;
             line-height: 1.1;
+            font-family: Open Sans, arial, Apple SD Gothic Neo, Noto Sans CJK KR, 본고딕, KoPubDotum, 나눔바른고딕, 나눔고딕, NanumGothic, 맑은고딕, Malgun Gothic, sans-serif;
+        }
+        .main {
             font-family: Open Sans,arial,Apple SD Gothic Neo,Noto Sans CJK KR,본고딕,KoPubDotum,나눔바른고딕,나눔고딕,NanumGothic,맑은고딕,Malgun Gothic,sans-serif;
+            font-size: 20px;
+            font-weight: 700;
         }
 
         .nav-right-item {
@@ -35,20 +40,34 @@
         .nav-item {
             margin-left: 10px;
         }
+
         .prices {
             display: flex;
             justify-content: space-between;
         }
+
         .prices-item {
             display: flex;
         }
+
         .tables {
-            border : 1px solid black;
+            border: 1px solid black;
         }
+
         .tables-tr {
             border: 1px solid black;
         }
-        .tables-td {
+
+        .tables-td1 {
+            color: #FFFFFF;
+            background-color: lightblue;
+            width: 25%;
+            height: 35px;
+            text-align: center;
+            border: 1px solid black;
+        }
+        .tables-td2 {
+            text-align: left;
             border: 1px solid black;
         }
     </style>
@@ -84,33 +103,33 @@
             <div class="prices-item">프라이스1</div>
             <div class="prices-item">프라이스2</div>
             <div class="prices-item">
-                <table class="tables">
+                <table class="tables" style="width: 500px; ">
                     <tbody>
-                        <tr class="tables-tr">
-                            <td class="tables-td">이동후</td>
+                        <tr class="tables-tr" style="display: flex; background-color: lightblue; text-align: center; color: #000; width: 100%; border:2px  solid lightskyblue;"" >
+                            <th>이동후</th>
                         </tr>
                         <tr class="tables-tr">
-                            <td class="tables-td">1</td>
+                            <td class="tables-td4"><img src="dog.jfif" alt=""></td>
                         </tr>
                         <tr class="tables-tr">
-                            <td class="tables-td">2</td>
-                            <td class="tables-td">3</td>
+                            <td class="tables-td1">2</td>
+                            <td class="tables-td2">3</td>
                         </tr>
                         <tr class="tables-tr">
-                            <td class="tables-td">4</td>
-                            <td class="tables-td">5</td>
+                            <td class="tables-td1">4</td>
+                            <td class="tables-td2">5</td>
                         </tr>
                         <tr class="tables-tr">
-                            <td class="tables-td">6</td>
-                            <td class="tables-td">7</td>
+                            <td class="tables-td1">6</td>
+                            <td class="tables-td2">7</td>
                         </tr>
                         <tr class="tables-tr">
-                            <td class="tables-td">8</td>
-                            <td class="tables-td">9</td>
+                            <td class="tables-td1">8</td>
+                            <td class="tables-td2">9</td>
                         </tr>
                         <tr class="tables-tr">
-                            <td class="tables-td"></td>
-                            <td class="tables-td"></td>
+                            <td class="tables-td1"></td>
+                            <td class="tables-td2"></td>
                         </tr>
                     </tbody>
                 </table>
