@@ -5,21 +5,51 @@
     <link rel="stylesheet" href="../css/all.min.css">
     <style>
         .nav {
-            height: 70px;
-            border-bottom: 1px solid black;
+            padding: 0 1rem;
+            font-size: 30px;
+            background-color: #008275;
+            color: #eceeef;
+            position: relative;
             display: flex;
-            align-items: center;
             justify-content: space-between;
         }
+
+        .title {
+            font-size: 30px;
+            margin: 0 0 2rem;
+            font-weight: 700;
+            line-height: 1.1;
+            font-family: Open Sans,arial,Apple SD Gothic Neo,Noto Sans CJK KR,본고딕,KoPubDotum,나눔바른고딕,나눔고딕,NanumGothic,맑은고딕,Malgun Gothic,sans-serif;
+        }
+
         .nav-right-item {
             display: flex;
             margin-left: auto;
+            margin: 0px, 40px;
         }
+
         .nav-left-item {
             display: flex;
         }
+
         .nav-item {
             margin-left: 10px;
+        }
+        .prices {
+            display: flex;
+            justify-content: space-between;
+        }
+        .prices-item {
+            display: flex;
+        }
+        .tables {
+            border : 1px solid black;
+        }
+        .tables-tr {
+            border: 1px solid black;
+        }
+        .tables-td {
+            border: 1px solid black;
         }
     </style>
 </head>
@@ -29,7 +59,10 @@
         <div class="nav-left-item">
             <div class="nav-item"><i class="fab fa-angellist"></i></div>
             <div class="nav-item">동후위키</div>
-            <div class="nav-item"></div>
+            <div class="nav-iten"></div>
+            <div class="nav-iten"></div>
+            <div class="nav-iten"></div>
+            <div class="nav-item"><i class="fas fa-exchange-alt"></i>최근변경</div>
         </div>
         <div class="nav-right-item">
 
@@ -40,7 +73,7 @@
         </div>
     </div>
     <div class="main">
-        <div class="tilel">Lorem.
+        <div class="title">Lorem.
             <div class="subtitle">
                 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Labore at ratione incidunt tempora doloremque
                 aliquam, amet vel perferendis reprehenderit quasi veritatis odio nam dolores quas repellat inventore ad!
@@ -50,7 +83,38 @@
         <div class="prices">
             <div class="prices-item">프라이스1</div>
             <div class="prices-item">프라이스2</div>
-            <div class="prices-item">프라이스3</div>
+            <div class="prices-item">
+                <table class="tables">
+                    <tbody>
+                        <tr class="tables-tr">
+                            <td class="tables-td">이동후</td>
+                        </tr>
+                        <tr class="tables-tr">
+                            <td class="tables-td">1</td>
+                        </tr>
+                        <tr class="tables-tr">
+                            <td class="tables-td">2</td>
+                            <td class="tables-td">3</td>
+                        </tr>
+                        <tr class="tables-tr">
+                            <td class="tables-td">4</td>
+                            <td class="tables-td">5</td>
+                        </tr>
+                        <tr class="tables-tr">
+                            <td class="tables-td">6</td>
+                            <td class="tables-td">7</td>
+                        </tr>
+                        <tr class="tables-tr">
+                            <td class="tables-td">8</td>
+                            <td class="tables-td">9</td>
+                        </tr>
+                        <tr class="tables-tr">
+                            <td class="tables-td"></td>
+                            <td class="tables-td"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     </div>
 
