@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+
+    나이: <input type="text" id="input1">
+    <br>
+    <button onclick="disting()">클릭</button>
+    <p id="level"></p>
+    <p id="price"></p>
+
+    <script>
+        function disting() {
+            var a = document.getElementById("input1").value
+            if (a <= 5) {
+                document.getElementById("level").innerHTML = "어린이입니다"
+                document.getElementById("price").innerHTML = "500원입니다"
+            } else if (6 < a && a <= 19) {
+                document.getElementById("level").innerHTML = "학생입니다"
+                document.getElementById("price").innerHTML = "1000원입니다"
+
+            } else {
+                document.getElementById("level").innerHTML = "성인입니다"
+                document.getElementById("price").innerHTML = "1500원입니다"
+            }
+
+        }
+
+
+
+    </script>
+
+</body>
+
+</html>
