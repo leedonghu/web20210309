@@ -1,0 +1,22 @@
+.nav {
+    padding: 0 1rem;
+    font-size: 1rem;
+    background-color: lightskyblue;
+    color: #eceeef;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: inherit;
+    width: 100%;
+}
+.nav-ul {
+    display: flex;
+    align-self: inherit;
+    flex-grow: 1;
+}
+.nav-li {
+    flex: inherit;
+}
+body {
+    font-family: Open Sans,arial,Apple SD Gothic Neo,Noto Sans CJK KR,본고딕,KoPubDotum,나눔바른고딕,나눔고딕,NanumGothic,맑은고딕,Malgun Gothic,sans-serif;
+}
